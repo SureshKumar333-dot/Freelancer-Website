@@ -7,7 +7,7 @@ This project features smooth animations, custom cursor effects, particle backgro
 
 ## 🚀 Live Demo
 
-👉 https://sureshkumar333-dot.github.io/Slide-animation/
+👉 https://sureshkumar333-dot.github.io/Freelancer-Website/
 
 ---
 
