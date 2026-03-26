@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — UI/UX Designer & Web Developer</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">YN.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg-lines"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">UI/UX Designer &amp; Web Developer</div>
+      <h1 class="hero-name">Your Name</h1>
+      <p class="hero-title">Design. Code. Launch.</p>
+      <p class="hero-desc">I design stunning interfaces <em style="color:var(--gold);font-style:normal;">and</em> build them into reality. From pixel-perfect UI/UX to clean, performant web development — I deliver the full picture.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary"><span>View My Work</span></a>
+        <a href="#contact" class="btn-secondary">Start a Project</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Designing with <em>Purpose</em> &amp; Passion</h2>
+      <div class="about-grid reveal">
+        <div class="about-image-wrap">
+          <div class="about-image-frame">
+            <span class="about-placeholder">YN</span>
+          </div>
+          <div class="about-tag">Available for Work</div>
+        </div>
+        <div class="about-text">
+          <p>I'm a UI/UX Designer & Web Developer who bridges the gap between beautiful design and solid code. I don't just hand off mockups — I build them into real, fast, production-ready websites.</p>
+          <p>Whether it's crafting a seamless user experience in Figma or writing clean React & JavaScript code, I bring your vision to life end-to-end. One person. Full stack. Zero compromise on quality.</p>
+          <div class="gold-divider"></div>
+          <div class="about-stats">
+            <div><div class="stat-num" data-count="50">0</div><div class="stat-label">Projects Done</div></div>
+            <div><div class="stat-num" data-count="40">0</div><div class="stat-label">Happy Clients</div></div>
+            <div><div class="stat-num" data-count="5">0</div><div class="stat-label">Years Exp</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title">Skills &amp; <em>Services</em></h2>
+
+      <div class="skills-tabs">
+        <button class="skills-tab active" data-tab="design">UI/UX Design</button>
+        <button class="skills-tab" data-tab="dev">Web Development</button>
+        <button class="skills-tab" data-tab="all">Full Package</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- DESIGN skills -->
+        <div class="skill-card reveal" data-discipline="design">
+          <div class="skill-icon">✦</div>
+          <div class="skill-name">UI Design</div>
+          <div class="skill-desc">Pixel-perfect visual designs that bring your brand to life with a consistent, stunning aesthetic across all touchpoints.</div>
+          <div class="skill-tags"><span class="skill-tag">Figma</span><span class="skill-tag">Adobe XD</span><span class="skill-tag">Sketch</span></div>
+        </div>
+        <div class="skill-card reveal" data-discipline="design">
+          <div class="skill-icon">◈</div>
+          <div class="skill-name">UX Research</div>
+          <div class="skill-desc">Deep user research and usability testing to ensure your product resonates with your target audience and drives results.</div>
+          <div class="skill-tags"><span class="skill-tag">User Testing</span><span class="skill-tag">Personas</span><span class="skill-tag">Wireframes</span></div>
+        </div>
+        <div class="skill-card reveal" data-discipline="design">
+          <div class="skill-icon">◇</div>
+          <div class="skill-name">Prototyping</div>
+          <div class="skill-desc">Interactive prototypes that feel real — from low-fidelity concepts to high-fidelity, fully-clickable design systems.</div>
+          <div class="skill-tags"><span class="skill-tag">InVision</span><span class="skill-tag">Figma</span><span class="skill-tag">Principle</span></div>
+        </div>
+        <!-- DEV skills -->
+        <div class="skill-card reveal" data-discipline="dev">
+          <div class="skill-icon">⟨/⟩</div>
+          <div class="skill-name">Frontend Dev</div>
+          <div class="skill-desc">Building fast, responsive, and accessible websites with clean semantic HTML, modern CSS, and smooth JavaScript.</div>
+          <div class="skill-tags"><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span></div>
+        </div>
+        <div class="skill-card reveal" data-discipline="dev">
+          <div class="skill-icon">⚛</div>
+          <div class="skill-name">React & Next.js</div>
+          <div class="skill-desc">Component-driven applications with React and Next.js — optimized for performance, SEO, and delightful user experiences.</div>
+          <div class="skill-tags"><span class="skill-tag">React</span><span class="skill-tag">Next.js</span><span class="skill-tag">TypeScript</span></div>
+        </div>
+        <div class="skill-card reveal" data-discipline="dev">
+          <div class="skill-icon">☁</div>
+          <div class="skill-name">Deployment & CMS</div>
+          <div class="skill-desc">Taking your site live with fast, scalable hosting and easy-to-manage content systems you can update yourself.</div>
+          <div class="skill-tags"><span class="skill-tag">Vercel</span><span class="skill-tag">Webflow</span><span class="skill-tag">Sanity</span></div>
+        </div>
+        <!-- ALL / FULL PACKAGE -->
+        <div class="skill-card reveal" data-discipline="all">
+          <div class="skill-icon">⬡</div>
+          <div class="skill-name">Design Systems</div>
+          <div class="skill-desc">Scalable, component-based design systems that bridge Figma and code — keeping design and dev perfectly aligned.</div>
+          <div class="skill-tags"><span class="skill-tag">Tokens</span><span class="skill-tag">Storybook</span><span class="skill-tag">Docs</span></div>
+        </div>
+        <div class="skill-card reveal" data-discipline="all">
+          <div class="skill-icon">⟡</div>
+          <div class="skill-name">Brand Identity</div>
+          <div class="skill-desc">From logo to live website — I craft your brand identity and build it directly into a polished web presence.</div>
+          <div class="skill-tags"><span class="skill-tag">Illustrator</span><span class="skill-tag">Branding</span><span class="skill-tag">Web</span></div>
+        </div>
+        <div class="skill-card reveal" data-discipline="all">
+          <div class="skill-icon">✧</div>
+          <div class="skill-name">Motion & Animation</div>
+          <div class="skill-desc">Bringing designs to life with CSS animations, Framer Motion, and Lottie — interactions that delight every user.</div>
+          <div class="skill-tags"><span class="skill-tag">Framer Motion</span><span class="skill-tag">Lottie</span><span class="skill-tag">GSAP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Strip -->
+  <div class="tech-strip">
+    <div class="tech-strip-inner">
+      <span>Figma</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>Next.js</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Tailwind CSS</span><span class="sep">✦</span><span>Adobe XD</span><span class="sep">✦</span><span>Node.js</span><span class="sep">✦</span><span>Framer Motion</span><span class="sep">✦</span><span>GSAP</span><span class="sep">✦</span><span>Webflow</span><span class="sep">✦</span><span>Sanity CMS</span><span class="sep">✦</span><span>Vercel</span><span class="sep">✦</span><span>Git</span><span class="sep">✦</span>
+      <span>Figma</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>Next.js</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Tailwind CSS</span><span class="sep">✦</span><span>Adobe XD</span><span class="sep">✦</span><span>Node.js</span><span class="sep">✦</span><span>Framer Motion</span><span class="sep">✦</span><span>GSAP</span><span class="sep">✦</span><span>Webflow</span><span class="sep">✦</span><span>Sanity CMS</span><span class="sep">✦</span><span>Vercel</span><span class="sep">✦</span><span>Git</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Selected <em>Works</em></h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="project-thumb-number">01</span>
+            <span class="project-thumb-label">Finance App · Design</span>
+            <div class="project-overlay">View Case Study →</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">UI/UX · Mobile · Fintech</div>
+            <div class="project-title">WealthFlow Dashboard</div>
+            <div class="project-desc">Personal finance app redesign focused on clarity and actionable insights. Figma to pixel-perfect handoff.</div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="project-thumb-number">02</span>
+            <span class="project-thumb-label">E-Commerce · Dev</span>
+            <div class="project-overlay">View Case Study →</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Web Dev · Next.js · Retail</div>
+            <div class="project-title">Luxe Boutique Store</div>
+            <div class="project-desc">Designed and built a premium e-commerce site with Next.js & Tailwind. Conversion rate up 42%.</div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="project-thumb-number">03</span>
+            <span class="project-thumb-label">SaaS · Design + Dev</span>
+            <div class="project-overlay">View Case Study →</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Full Stack · SaaS · B2B</div>
+            <div class="project-title">TaskFlow Pro</div>
+            <div class="project-desc">End-to-end product — design system in Figma, built in React with full auth and dashboard UI.</div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="project-thumb-number">04</span>
+            <span class="project-thumb-label">Agency · Dev</span>
+            <div class="project-overlay">View Case Study →</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Web Dev · React · Agency</div>
+            <div class="project-title">Noir Creative Agency</div>
+            <div class="project-desc">Award-worthy agency website built with React and GSAP. Scroll-driven animations and silky transitions.</div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="project-thumb-number">05</span>
+            <span class="project-thumb-label">EdTech · Design</span>
+            <div class="project-overlay">View Case Study →</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">UX Design · Education · Web</div>
+            <div class="project-title">LearnSphere Platform</div>
+            <div class="project-desc">Immersive learning platform with gamified UI, adaptive layouts and full Figma prototype delivered.</div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="project-thumb-number">06</span>
+            <span class="project-thumb-label">Real Estate · Dev</span>
+            <div class="project-overlay">View Case Study →</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Web Dev · Next.js · Real Estate</div>
+            <div class="project-title">Prestige Homes Portal</div>
+            <div class="project-desc">Luxury real estate platform built with Next.js + Sanity CMS. Property tours, inquiry forms, blazing fast.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <div class="section-inner">
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">Client <em>Voices</em></h2>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">"Absolutely blown away by the quality of work. The designs were not just beautiful — they were strategic. Our conversion rate jumped 38% after the redesign. Worth every penny."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">S</div>
+            <div><div class="reviewer-name">Sarah Mitchell</div><div class="reviewer-role">CEO · BrightPath Ventures</div></div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">"Working with this designer was the best decision for our startup. They understood our vision instantly and delivered beyond what we imagined. The attention to detail is extraordinary."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div><div class="reviewer-name">Arjun Sharma</div><div class="reviewer-role">Founder · Nexora Labs</div></div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">"Exceptional designer who truly listens. Our app went from confusing to crystal clear. Users now complete sign-up in half the time. The ROI speaks for itself. Highly recommended."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">L</div>
+            <div><div class="reviewer-name">Laura Chen</div><div class="reviewer-role">Product Lead · FinStack</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's Build Something <em>Extraordinary</em></h2>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <h3>Ready to elevate your digital presence?</h3>
+          <p>I'm currently accepting new projects. Whether you need a full product redesign, a brand new app, or just want to explore possibilities — let's talk.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">✉</div>
+              <div><div class="contact-item-label">Email</div><div class="contact-item-text">hello@yourname.com</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">◎</div>
+              <div><div class="contact-item-label">Location</div><div class="contact-item-text">Coimbatore, Tamil Nadu · Available Remote</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">◷</div>
+              <div><div class="contact-item-label">Response Time</div><div class="contact-item-text">Within 24 hours</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Doe" required></div>
+              <div class="form-group"><label>Email Address</label><input type="email" placeholder="john@company.com" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Budget Range</label>
+                <select><option value="">Select a range</option><option>Under ₹20,000</option><option>₹20,000 – ₹50,000</option><option>₹50,000 – ₹1,00,000</option><option>₹1,00,000+</option></select>
+              </div>
+              <div class="form-group">
+                <label>Project Type</label>
+                <select><option value="">Select type</option><option>UI Design</option><option>UX Research</option><option>Full Product Design</option><option>Web Development</option><option>Design + Development</option><option>Design System</option><option>Brand Identity</option></select>
+              </div>
+            </div>
+            <div class="form-group"><label>Tell Me About Your Project</label><textarea placeholder="Describe your project, goals, and timeline..."></textarea></div>
+            <button type="submit" class="form-submit"><span>Send Message →</span></button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✦</div>
+            <h4>Message Received</h4>
+            <p>Thank you for reaching out. I'll review your project details and get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">YN.</div>
+    <div class="footer-copy">© 2026 Your Name · All Rights Reserved</div>
+    <div class="footer-socials">
+      <a href="#" class="footer-social">Li</a>
+      <a href="#" class="footer-social">Bh</a>
+      <a href="#" class="footer-social">Dr</a>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
