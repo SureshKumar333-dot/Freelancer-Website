@@ -1,7 +1,5 @@
 A modern, responsive portfolio website for a freelance UI/UX Designer & Web Developer. It showcases skills, selected work, client testimonials, and a contact section.
 
-![Website Screenshot](link-to-your-screenshot.png) *(Optional: Add a screenshot of your website)*
-
 ## ✨ Live Demo
 
 Check out the live site here: [https://sureshkumar333-dot.github.io/Freelancer-Website/](https://sureshkumar333-dot.github.io/Freelancer-Website/)
